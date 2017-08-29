@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hyemoon.myscrapbook.R;
-import com.hyemoon.myscrapbook.databinding.ContentScrapbookBinding;
+import com.hyemoon.myscrapbook.databinding.FragmentScrapbookBinding;
 import com.hyemoon.myscrapbook.search.model.Image;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public class ScrapbookFragment extends Fragment implements ScrapbookContract.Vie
 
 	private ScrapbookContract.Presenter presenter;
 
-	ContentScrapbookBinding binding;
+	FragmentScrapbookBinding binding;
 
 	private ScrapbookAdapter gridViewAdapter;
 
@@ -70,7 +70,7 @@ public class ScrapbookFragment extends Fragment implements ScrapbookContract.Vie
 	@Override
 	public void onActivityCreated(@Nullable Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
-		binding = ContentScrapbookBinding.bind(getView());
+		binding = FragmentScrapbookBinding.bind(getView());
 		initView();
 	}
 
