@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:tools="http://schemas.android.com/tools"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="2">
+
+		<Button
+				android:id="@+id/tab_search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:background="@color/blue"
+				android:text="이미지 검색"/>
+
+		<Button
+				android:id="@+id/tab_scrapbook"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:background="@color/pink"
+				android:text="내 보관함"/>
+
+	</LinearLayout>
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="@color/blue"
+			android:padding="10dp">
+
+		<Button
+				android:id="@+id/btn_search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:text="검색!"/>
+
+		<EditText
+				android:id="@+id/edittext_keyword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/btn_search"
+				android:maxLines="1"
+				android:inputType="text"
+				android:imeOptions="actionSearch"
+				android:textColor="@android:color/white"
+				android:hint="검색어를 입력하세요"
+				tools:text="coffee"
+				android:textColorHint="@color/light_gray"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<android.support.v7.widget.RecyclerView
+				android:id="@+id/recyclerview_images"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="10dp"/>
+
+		<ProgressBar
+				android:id="@+id/loading_indicator"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:paddingBottom="30dp"
+				android:visibility="gone"/>
+
+	</RelativeLayout>
+
+
+</LinearLayout>

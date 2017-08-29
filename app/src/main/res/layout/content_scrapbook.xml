@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools">
+
+	<LinearLayout
+
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			tools:context="com.hyemoon.myscrapbok.scrapbook.ScrapbookActivity">
+
+		<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:weightSum="2">
+
+			<Button
+					android:id="@+id/tab_search"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:background="@color/blue"
+					android:text="이미지 검색"/>
+
+			<Button
+					android:id="@+id/tab_scrapbook"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginTop="10dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:background="@color/pink"
+					android:text="내 보관함"/>
+
+
+		</LinearLayout>
+
+		<TextView
+				android:id="@+id/scrapbook_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/pink"
+				android:padding="15dp"
+				android:text="내 보관함 (0)"/>
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+			<GridView
+					android:id="@+id/gridview_scrapbook"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_margin="10dp"
+					android:numColumns="2"/>
+
+			<LinearLayout
+					android:id="@+id/no_result_layout"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:orientation="vertical"
+					android:visibility="gone"
+					android:gravity="center">
+
+				<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/no_result"/>
+
+				<TextView android:layout_width="wrap_content"
+						  android:layout_height="wrap_content"
+						  android:text="담긴 이미지가 없습니다!"/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</layout>
