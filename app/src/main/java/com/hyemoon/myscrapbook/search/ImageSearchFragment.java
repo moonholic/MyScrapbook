@@ -95,7 +95,7 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 	@Nullable
 	@Override
 	public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-		View root = inflater.inflate(R.layout.content_image_search, null);
+		View root = inflater.inflate(R.layout.fragment_image_search, null);
 		ButterKnife.bind(this, root);
 		initView();
 		return root;

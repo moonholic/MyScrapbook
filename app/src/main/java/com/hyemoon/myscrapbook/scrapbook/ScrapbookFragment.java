@@ -63,7 +63,7 @@ public class ScrapbookFragment extends Fragment implements ScrapbookContract.Vie
 	@Override
 	public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-		View root = inflater.inflate(R.layout.content_scrapbook, null);
+		View root = inflater.inflate(R.layout.fragment_scrapbook, null);
 		return root;
 	}
 
