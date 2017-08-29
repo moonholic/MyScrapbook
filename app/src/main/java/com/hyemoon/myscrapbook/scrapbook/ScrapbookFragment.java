@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.hyemoon.myscrapbook.R;
 import com.hyemoon.myscrapbook.databinding.ContentScrapbookBinding;
+import com.hyemoon.myscrapbook.scrapbook.adapter.ScrapbookAdapter;
 import com.hyemoon.myscrapbook.search.model.Image;
 
 import java.util.List;

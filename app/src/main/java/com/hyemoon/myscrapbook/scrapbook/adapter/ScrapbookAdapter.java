@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.scrapbook;
+package com.hyemoon.myscrapbook.scrapbook.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by MOON on 8/27/17.
+ * Created by MOON on 8/27/17
  */
 
 public class ScrapbookAdapter extends BaseAdapter {
