@@ -22,12 +22,12 @@ public class ScrapbookPresenter implements ScrapbookContract.Presenter {
 	}
 	@Override
 	public void start() {
-		scrappedImages = ImageRepository.getInstance().getSelectedImageList();
 		view.showScrappedImages();
 	}
 
 	@Override
 	public List<Image> getScrappedImages() {
+		scrappedImages = ImageRepository.getInstance().getSelectedImageList();
 		return scrappedImages;
 	}
 }

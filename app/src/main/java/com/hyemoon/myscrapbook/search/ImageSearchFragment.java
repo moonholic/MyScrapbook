@@ -18,14 +18,15 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 import com.hyemoon.myscrapbook.R;
 import com.hyemoon.myscrapbook.scrapbook.ScrapbookActivity;
+import com.hyemoon.myscrapbook.search.adapter.ImageSearchRecyclerViewAdapter;
 import com.hyemoon.myscrapbook.search.model.Image;
 
 import java.util.List;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 

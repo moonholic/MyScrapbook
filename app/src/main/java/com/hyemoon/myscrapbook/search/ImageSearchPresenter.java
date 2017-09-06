@@ -70,13 +70,20 @@ public class ImageSearchPresenter implements ImageSearchContract.Presenter, Resp
 
 	@Override
 	public void onErrorResponse(VolleyError error) {
-		Log.d(TAG, "VolleyError ::: " + error.getMessage());
+		Log.d(TAG, "Volley Error ::: " + error.getMessage());
 	}
 
 	@Override
 	public void onResponse(JSONObject response) {
 		Log.d(TAG, "Volley Success!! response ::: " + response.toString());
 
+		saveImageList(response);
+
+		view.showImageList(ImageRepository.getInstance().getImageList());
+		view.hideLoadingIndicator();
+	}
+
+	private void saveImageList(JSONObject response) {
 		Gson gson = new Gson();
 		ImageSearchVO vo = gson.fromJson(response.toString(), ImageSearchVO.class);
 
@@ -84,10 +91,7 @@ public class ImageSearchPresenter implements ImageSearchContract.Presenter, Resp
 		ImageRepository.getInstance().removeAll();
 
 		// ask Model to save data to repo
-		ImageRepository.getInstance().addImages(vo.getDocuments());
-
-		view.showImageList(ImageRepository.getInstance().getImageList());
-		view.hideLoadingIndicator();
+		ImageRepository.getInstance().addImageList(vo.getDocuments());
 	}
 
 	@Override

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by MOON on 8/26/17.
+ * Created by MOON on 8/26/17
  */
 
 public class ImageRepository {
@@ -32,12 +32,23 @@ public class ImageRepository {
 		return INSTANCE;
 	}
 
-	public void addImages(List<Image> images) {
-		if (ImageRepository.images == null) {
-			ImageRepository.images = new ArrayList<>();
+	public void addImage(Image image) {
+		if (images == null) {
+			images = new ArrayList<>();
+		}
+		images.add(image);
+	}
+
+	public void addImageList(List<Image> imageList) {
+		if (images == null) {
+			images = new ArrayList<>();
 		}
 
-		ImageRepository.images.addAll(images);
+		images.addAll(imageList);
+	}
+
+	public int getImageCount() {
+		return images.size();
 	}
 
 	public List<Image> getImageList() {
