@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search.scrapbookTab;
+package com.hyemoon.myscrapbook.scrapbook.scrapbookTab;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.hyemoon.myscrapbook.R;
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import java.util.ArrayList;
 import java.util.List;

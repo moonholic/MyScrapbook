@@ -1,6 +1,6 @@
-package com.hyemoon.myscrapbook.search.dto;
+package com.hyemoon.myscrapbook.scrapbook.dto;
 
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import java.util.List;
 

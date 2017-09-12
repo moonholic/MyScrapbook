@@ -1,7 +1,7 @@
-package com.hyemoon.myscrapbook.search.scrapbookTab;
+package com.hyemoon.myscrapbook.scrapbook.scrapbookTab;
 
 import com.hyemoon.myscrapbook.data.ImageRepository;
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import java.util.List;
 

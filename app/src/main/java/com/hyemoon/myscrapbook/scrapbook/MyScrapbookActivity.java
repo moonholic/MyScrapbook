@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search;
+package com.hyemoon.myscrapbook.scrapbook;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.hyemoon.myscrapbook.R;
-import com.hyemoon.myscrapbook.search.scrapbookTab.ScrapbookFragment;
-import com.hyemoon.myscrapbook.search.scrapbookTab.ScrapbookPresenter;
-import com.hyemoon.myscrapbook.search.searchTab.ImageSearchFragment;
-import com.hyemoon.myscrapbook.search.searchTab.ImageSearchPresenter;
+import com.hyemoon.myscrapbook.scrapbook.scrapbookTab.ScrapbookFragment;
+import com.hyemoon.myscrapbook.scrapbook.scrapbookTab.ScrapbookPresenter;
+import com.hyemoon.myscrapbook.scrapbook.searchTab.ImageSearchFragment;
+import com.hyemoon.myscrapbook.scrapbook.searchTab.ImageSearchPresenter;
 
 /**
  * Created by MOON on 8/26/17

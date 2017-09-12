@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search.searchTab;
+package com.hyemoon.myscrapbook.scrapbook.searchTab;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -21,7 +21,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import com.hyemoon.myscrapbook.R;
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import java.util.List;
 

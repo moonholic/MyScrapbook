@@ -1,6 +1,6 @@
 package com.hyemoon.myscrapbook.data;
 
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import org.junit.Before;
 import org.junit.Test;

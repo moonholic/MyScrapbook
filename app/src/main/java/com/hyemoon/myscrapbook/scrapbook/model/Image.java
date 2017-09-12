@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search.model;
+package com.hyemoon.myscrapbook.scrapbook.model;
 
 import android.support.annotation.NonNull;
 

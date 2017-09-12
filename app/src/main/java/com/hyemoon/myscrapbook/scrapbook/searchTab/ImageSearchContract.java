@@ -1,8 +1,8 @@
-package com.hyemoon.myscrapbook.search.searchTab;
+package com.hyemoon.myscrapbook.scrapbook.searchTab;
 
 import com.hyemoon.myscrapbook.BasePresenter;
 import com.hyemoon.myscrapbook.BaseView;
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search.scrapbookTab;
+package com.hyemoon.myscrapbook.scrapbook.scrapbookTab;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.hyemoon.myscrapbook.R;
 import com.hyemoon.myscrapbook.databinding.ContentScrapbookBinding;
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import java.util.List;
 

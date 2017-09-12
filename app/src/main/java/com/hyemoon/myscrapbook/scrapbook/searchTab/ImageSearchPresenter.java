@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search.searchTab;
+package com.hyemoon.myscrapbook.scrapbook.searchTab;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -12,8 +12,8 @@ import com.hyemoon.myscrapbook.Constants;
 import com.hyemoon.myscrapbook.data.ImageRepository;
 import com.hyemoon.myscrapbook.network.HttpRequest;
 import com.hyemoon.myscrapbook.network.VolleyRequestQueue;
-import com.hyemoon.myscrapbook.search.dto.ImageSearchVO;
-import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.scrapbook.dto.ImageSearchVO;
+import com.hyemoon.myscrapbook.scrapbook.model.Image;
 
 import org.json.JSONObject;
 
