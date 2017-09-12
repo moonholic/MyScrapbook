@@ -56,7 +56,7 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 	@BindView(R.id.recyclerview_images)
 	RecyclerView recyclerView;
 
-	private ImageSearchRecyclerViewAdapter recyclerViewAdapter;
+	private ImageSearchAdapter recyclerViewAdapter;
 
 	@BindView(R.id.loading_indicator)
 	ProgressBar progressBar;
@@ -95,6 +95,8 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 		return root;
 	}
 
+
+
 	private void initView() {
 		recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
@@ -129,9 +131,9 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 		hideLoadingIndicator();
 		recyclerView.scrollToPosition(0);
 
-		if(recyclerViewAdapter == null) {
-			recyclerViewAdapter = new ImageSearchRecyclerViewAdapter(getContext(), images);
-			recyclerViewAdapter.setClickListener(new ImageSearchRecyclerViewAdapter.ItemClickListener() {
+//		if(recyclerViewAdapter == null) {
+			recyclerViewAdapter = new ImageSearchAdapter(getContext(), images);
+			recyclerViewAdapter.setClickListener(new ImageSearchAdapter.ItemClickListener() {
 				@Override
 				public void onItemClick(View view, int position) {
 					boolean newValue = presenter.scrapImage(position);
@@ -142,9 +144,9 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 				}
 			});
 			recyclerView.setAdapter(recyclerViewAdapter);
-		} else {
-			recyclerViewAdapter.replaceData(images);
-		}
+//		} else {
+//			recyclerViewAdapter.replaceData(images);
+//		}
 	}
 
 	@Override

@@ -18,13 +18,13 @@ import java.util.List;
  * Created by MOON on 8/27/17
  */
 
-public class ImageSearchRecyclerViewAdapter extends RecyclerView.Adapter<ImageSearchRecyclerViewAdapter.ViewHolder> {
+public class ImageSearchAdapter extends RecyclerView.Adapter<ImageSearchAdapter.ViewHolder> {
 
 	private Context context;
 	private List<Image> imageList;
 	private ItemClickListener itemClickListener;
 
-	public ImageSearchRecyclerViewAdapter(Context context, List<Image> images) {
+	public ImageSearchAdapter(Context context, List<Image> images) {
 		this.context = context;
 		this.imageList = images;
 	}
