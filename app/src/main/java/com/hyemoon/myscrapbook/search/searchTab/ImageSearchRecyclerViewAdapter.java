@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search.adapter;
+package com.hyemoon.myscrapbook.search.searchTab;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

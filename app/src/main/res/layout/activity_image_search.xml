@@ -4,25 +4,38 @@
 			  android:layout_width="match_parent"
 			  android:layout_height="match_parent">
 
-	<android.support.design.widget.CoordinatorLayout
-			android:id="@+id/coordinatorLayout"
+	<LinearLayout
 			android:layout_width="match_parent"
-			android:layout_height="match_parent">
+			android:layout_height="50dp"
+			android:orientation="horizontal">
 
-		<FrameLayout
-				android:id="@+id/contentFrame"
-				android:layout_width="match_parent"
-				android:layout_height="match_parent" />
+		<Button
+				android:id="@+id/bt_tab1"
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="5dp"
+				android:background="@color/blue"
+				android:text="Image Search"/>
 
-		<!--<android.support.design.widget.FloatingActionButton-->
-				<!--android:id="@+id/fab_add_task"-->
-				<!--android:layout_width="wrap_content"-->
-				<!--android:layout_height="wrap_content"-->
-				<!--android:layout_margin="@dimen/fab_margin"-->
-				<!--android:src="@android:drawable/ic_search_category_default"-->
-				<!--app:fabSize="normal"-->
-				<!--app:layout_anchor="@id/contentFrame"-->
-				<!--app:layout_anchorGravity="bottom|right|end" />-->
-	</android.support.design.widget.CoordinatorLayout>
+		<Button
+				android:id="@+id/bt_tab2"
+				android:layout_weight="1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="10dp"
+				android:background="@color/pink"
+				android:text="My Scrapbook"/>
+
+	</LinearLayout>
+
+	<FrameLayout
+				 android:id="@+id/fragment_container"
+				 android:layout_width="match_parent"
+				 android:layout_height="match_parent" />
 
 </LinearLayout>

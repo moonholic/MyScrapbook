@@ -1,7 +1,6 @@
-package com.hyemoon.myscrapbook.search;
+package com.hyemoon.myscrapbook.search.searchTab;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -22,8 +21,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import com.hyemoon.myscrapbook.R;
-import com.hyemoon.myscrapbook.scrapbook.ScrapbookActivity;
-import com.hyemoon.myscrapbook.search.adapter.ImageSearchRecyclerViewAdapter;
 import com.hyemoon.myscrapbook.search.model.Image;
 
 import java.util.List;
@@ -50,12 +47,6 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 
 	private int page = 1;
 
-	@BindView(R.id.tab_search)
-	Button searchTab;
-
-	@BindView(R.id.tab_scrapbook)
-	Button scrapbookTab;
-
 	@BindView(R.id.btn_search)
 	Button searchBtn;
 
@@ -69,6 +60,8 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 
 	@BindView(R.id.loading_indicator)
 	ProgressBar progressBar;
+
+	private List<Image> imageList;
 
 	public ImageSearchFragment() {
 		// Requires empty public constructor
@@ -109,13 +102,6 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 			@Override
 			public void onClick(View view) {
 				search();
-			}
-		});
-
-		scrapbookTab.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				openScrapbook();
 			}
 		});
 	}
@@ -159,12 +145,6 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 		} else {
 			recyclerViewAdapter.replaceData(images);
 		}
-	}
-
-	@Override
-	public void openScrapbook() {
-		Intent intent = new Intent(getContext(), ScrapbookActivity.class);
-		startActivity(intent);
 	}
 
 	@Override

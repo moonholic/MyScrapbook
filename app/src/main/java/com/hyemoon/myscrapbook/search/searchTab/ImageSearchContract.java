@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search;
+package com.hyemoon.myscrapbook.search.searchTab;
 
 import com.hyemoon.myscrapbook.BasePresenter;
 import com.hyemoon.myscrapbook.BaseView;
@@ -15,8 +15,6 @@ public interface ImageSearchContract {
 	interface View extends BaseView<Presenter> {
 
 		void showImageList(List<Image> images);
-
-		void openScrapbook();
 
 		void showLoadingIndicator();
 

@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.scrapbook;
+package com.hyemoon.myscrapbook.search.scrapbookTab;
 
 import com.hyemoon.myscrapbook.BasePresenter;
 import com.hyemoon.myscrapbook.BaseView;

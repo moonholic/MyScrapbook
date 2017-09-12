@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.scrapbook.adapter;
+package com.hyemoon.myscrapbook.search.scrapbookTab;
 
 import android.content.Context;
 import android.view.LayoutInflater;

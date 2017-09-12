@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.search;
+package com.hyemoon.myscrapbook.search.searchTab;
 
 import android.text.TextUtils;
 import android.util.Log;
@@ -13,11 +13,13 @@ import com.hyemoon.myscrapbook.data.ImageRepository;
 import com.hyemoon.myscrapbook.network.HttpRequest;
 import com.hyemoon.myscrapbook.network.VolleyRequestQueue;
 import com.hyemoon.myscrapbook.search.dto.ImageSearchVO;
+import com.hyemoon.myscrapbook.search.model.Image;
 
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -43,6 +45,11 @@ public class ImageSearchPresenter implements ImageSearchContract.Presenter, Resp
 		requestQueue = VolleyRequestQueue
 			.getInstance()
 			.getRequestQueue();
+
+		List<Image> imageList = ImageRepository.getInstance().getImageList();
+		if(imageList != null && !imageList.isEmpty()) {
+			view.showImageList(imageList);
+		}
 	}
 
 	@Override

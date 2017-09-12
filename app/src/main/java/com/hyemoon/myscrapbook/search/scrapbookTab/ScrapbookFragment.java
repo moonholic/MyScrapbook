@@ -1,4 +1,4 @@
-package com.hyemoon.myscrapbook.scrapbook;
+package com.hyemoon.myscrapbook.search.scrapbookTab;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 
 import com.hyemoon.myscrapbook.R;
 import com.hyemoon.myscrapbook.databinding.ContentScrapbookBinding;
-import com.hyemoon.myscrapbook.scrapbook.adapter.ScrapbookAdapter;
 import com.hyemoon.myscrapbook.search.model.Image;
 
 import java.util.List;
@@ -72,16 +71,6 @@ public class ScrapbookFragment extends Fragment implements ScrapbookContract.Vie
 	public void onActivityCreated(@Nullable Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		binding = ContentScrapbookBinding.bind(getView());
-		initView();
-	}
-
-	private void initView() {
-		binding.tabSearch.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View view) {
-				getActivity().finish();
-			}
-		});
 	}
 
 	@Override

@@ -2,6 +2,8 @@ package com.hyemoon.myscrapbook.scrapbook;
 
 import com.hyemoon.myscrapbook.data.ImageRepository;
 import com.hyemoon.myscrapbook.search.model.Image;
+import com.hyemoon.myscrapbook.search.scrapbookTab.ScrapbookFragment;
+import com.hyemoon.myscrapbook.search.scrapbookTab.ScrapbookPresenter;
 
 import org.junit.Before;
 import org.junit.Test;
