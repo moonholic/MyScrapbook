@@ -131,6 +131,7 @@ public class ImageSearchFragment extends Fragment implements ImageSearchContract
 		hideLoadingIndicator();
 		recyclerView.scrollToPosition(0);
 
+		// TODO: 나중에 아답터 재사용하도록 버그 고칠 것
 //		if(recyclerViewAdapter == null) {
 			recyclerViewAdapter = new ImageSearchAdapter(getContext(), images);
 			recyclerViewAdapter.setClickListener(new ImageSearchAdapter.ItemClickListener() {
